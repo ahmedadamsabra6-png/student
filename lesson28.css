@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    'h h'
+    's m'
+    'f f'
+    ;
+}
+header {
+    grid-area: h;
+    background-color: lightcoral;
+    color: white;
+    font-size: 50px;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+footer {
+    grid-area: f;
+    background-color: black;
+    color: white;
+    font-size: 50px;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+aside {
+    grid-area: s;
+    background-color: gold;
+    color: white;
+    font-size: 50px;
+    padding: 15px;
+    font-weight: bold;
+}
+main {
+    grid-area: m;
+    background-color: gainsboro;
+    color: black;
+    font-size: 50px;
+    padding: 15px;
+    font-weight: bold;
+}
